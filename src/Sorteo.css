@@ -1,0 +1,189 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sorteo-container {
+  width: 90%; /* Ajusta el ancho al 90% del dispositivo */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1e2a38;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+}
+
+.sorteo-container h2 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.input-participantes, .input-ganadores {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #1e64b0;
+  background-color: #0d1b28;
+  color: white;
+}
+
+.input-participantes {
+  resize: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: red;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  opacity: 0.9;
+}
+
+
+.ganador-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(30, 42, 56, 0.9); /* Fondo con transparencia */
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  background-image: url('./Sorteo.png'); /* Reemplaza con la ruta a tu imagen */
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.ganador-texto {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: gold; /* Color blanco */
+}
+
+.ganador-nombre {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: red; /* Color dorado */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid rgba(255, 255, 255, 0.75);
+  width: 0;
+  animation: typing 4s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+
+/* Estilo para pantallas medianas */
+@media(min-width: 768px) {
+  .sorteo-container {
+    width: 100%; /* Se expande un poco más en pantallas medianas */
+    padding: 30px;
+  }
+
+  .sorteo-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .input-participantes, .input-ganadores {
+    padding: 15px;
+  }
+
+  .btn {
+    padding: 15px;
+  }
+}
+
+/* Estilo para pantallas grandes */
+@media(min-width: 1024px) {
+  .sorteo-container {
+    width: 100%; /* Ocupa más espacio en pantallas grandes */
+    padding: 40px;
+  }
+
+  .sorteo-container h2 {
+    font-size: 1.75rem;
+    margin-bottom: 25px;
+  }
+
+  .input-participantes, .input-ganadores {
+    padding: 20px;
+  }
+
+  .btn {
+    padding: 20px;
+  }
+}
+
+/* Estilo para pantallas muy grandes */
+@media(min-width: 1440px) {
+  .sorteo-container {
+    width: 100%; /* Máximo tamaño para pantallas muy grandes */
+    padding: 50px;
+  }
+
+  .sorteo-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .input-participantes, .input-ganadores {
+    padding: 25px;
+  }
+
+  .btn {
+    padding: 25px;
+  }
+}                                             
